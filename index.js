@@ -17,7 +17,7 @@ app.on('ready', function () {
   app.dock.hide()
 
   let trayIcon = new Tray(__dirname + '/menu.png')
-  Menu.listen(trayIcon)
+  Menu.watch(trayIcon)
 
   // Quit app
   ipc.on('app-quit', function () {
