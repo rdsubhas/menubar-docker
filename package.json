@@ -1,0 +1,21 @@
+{
+  "name"   : "docker-menu",
+  "version": "0.1.0",
+  "private": true,
+  "main"   : "index.js",
+
+  "scripts": {
+    "start": "electron .",
+    "test": "standard"
+  },
+
+  "dependencies": {
+    "fix-path": "~1.1.0"
+  },
+
+  "devDependencies": {
+    "electron-packager": "^4.1.2",
+    "electron-prebuilt": "~0.34.0",
+    "standard": "~5.3.1"
+  }
+}
