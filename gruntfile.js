@@ -20,5 +20,6 @@ module.exports = function (grunt) {
 
   })
 
-  grunt.registerTask('default', ['electron'])
+  grunt.registerTask('build', ['electron'])
+  grunt.registerTask('default', ['build'])
 }
