@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "fix-path": "~1.1.0",
-    "bluebird": "~2.10.2"
+    "bluebird": "~2.10.2",
+    "parse-columns": "~1.2.0",
+    "lodash": "~3.10.0"
   },
   "devDependencies": {
     "electron-packager": "^4.1.2",
