@@ -9,7 +9,7 @@
   "scripts": {
     "start": "electron .",
     "test": "standard",
-    "build": "grunt"
+    "grunt": "grunt"
   },
   "dependencies": {
     "fix-path": "~1.1.0",
