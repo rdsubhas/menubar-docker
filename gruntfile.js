@@ -21,6 +21,7 @@ module.exports = function (grunt) {
         options: {
           name: 'Docker Menu',
           dir: 'build/app',
+          icon: 'images/DockerMenu.icns',
           asar: true,
           overwrite: true,
           out: 'build',
