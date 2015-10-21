@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt)
+  pkg = require('./package.json')
 
   grunt.initConfig({
 
@@ -19,9 +20,11 @@ module.exports = function (grunt) {
     electron: {
       osx: {
         options: {
-          name: 'Docker Menu',
+          name: 'DockerMenu-' + pkg.version + '-Mac',
           dir: 'build/app',
           icon: 'images/DockerMenu.icns',
+          'app-bundle-id': 'dockermenu',
+          'app-version': pkg.version,
           asar: true,
           overwrite: true,
           out: 'build',
