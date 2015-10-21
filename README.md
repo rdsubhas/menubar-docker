@@ -10,6 +10,8 @@
 
 * Run `grunt`
 
-## Release
+## TODO
 
 * **PRIORITY:** Auto updater, this should be the first thing towards a release
+* Use browserify or webpack: We tried using it but with both, its showing weird
+  errors related to "makeNodePromisified", etc
