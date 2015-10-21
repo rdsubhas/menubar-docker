@@ -12,7 +12,7 @@ module.exports = function (grunt) {
           'images/**/*', 'lib/**/*', 'main.js', 'package.json',
           'node_modules/bluebird/**/*', 'node_modules/configstore/**/*',
           'node_modules/fix-path/**/*', 'node_modules/lodash/**/*',
-          'node_modules/parse-columns/**/*'
+          'node_modules/parse-columns/**/*', 'node_modules/dockerode/**/*'
         ]
       }
     },

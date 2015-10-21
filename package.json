@@ -12,19 +12,20 @@
     "grunt": "grunt"
   },
   "dependencies": {
-    "bluebird": "~2.10.2",
+    "bluebird": "^2.10.2",
     "configstore": "^1.2.1",
     "fix-path": "~1.1.0",
-    "lodash": "~3.10.0",
-    "parse-columns": "~1.2.0"
+    "dockerode": "^2.2.3",
+    "lodash": "^3.10.0",
+    "parse-columns": "^1.2.0"
   },
   "devDependencies": {
-    "electron-prebuilt": "~0.34.0",
-    "grunt": "~0.4.5",
-    "grunt-cli": "~0.1.13",
+    "electron-prebuilt": "^0.34.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
     "grunt-contrib-copy": "^0.8.2",
-    "grunt-electron": "~2.0.1",
-    "load-grunt-tasks": "~3.3.0",
-    "standard": "~5.3.1"
+    "grunt-electron": "^2.0.1",
+    "load-grunt-tasks": "^3.3.0",
+    "standard": "^5.3.1"
   }
 }
