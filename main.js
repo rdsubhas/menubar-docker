@@ -16,8 +16,8 @@ app.on('ready', function () {
   // Hide in dock
   app.dock.hide()
 
-  let trayIcon = new Tray(__dirname + '/images/menuTemplate.png')
-  trayIcon.setPressedImage(__dirname + '/images/menuPressed.png')
+  let trayIcon = new Tray(app.getAppPath() + '/images/menuTemplate.png')
+  trayIcon.setPressedImage(app.getAppPath() + '/images/menuPressed.png')
   Menu.watch(trayIcon)
 
   // Quit app
