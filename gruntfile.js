@@ -4,6 +4,10 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
 
+    clean: {
+      dist: ['build']
+    },
+
     copy: {
       all: {
         cwd: '.',
@@ -37,6 +41,6 @@ module.exports = function (grunt) {
 
   })
 
-  grunt.registerTask('build', ['copy', 'electron'])
+  grunt.registerTask('build', ['clean', 'copy', 'electron'])
   grunt.registerTask('default', ['build'])
 }
