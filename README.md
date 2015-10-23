@@ -8,7 +8,12 @@
 
 ## Building
 
-* Run `grunt`
+Run the following commands in the cloned source directory:
+
+* ```npm install```
+* ```grunt```
+
+The resulting .app file will be placed in a ```build/``` subdirectory.
 
 ## TODO
 
