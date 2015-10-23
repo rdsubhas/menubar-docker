@@ -1,6 +1,12 @@
+'use strict'
+
 module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt)
-  pkg = require('./package.json')
+  let pkg = require('./package.json')
+
+  let dep_files = Object.keys(pkg.dependencies).map(function (dep) {
+    return 'node_modules/' + dep + '/**/*'
+  })
 
   grunt.initConfig({
 
@@ -9,15 +15,15 @@ module.exports = function (grunt) {
     },
 
     copy: {
-      all: {
+      sources: {
         cwd: '.',
         dest: 'build/app/',
-        src: [
-          'images/**/*', 'lib/**/*', 'main.js', 'package.json',
-          'node_modules/bluebird/**/*', 'node_modules/configstore/**/*',
-          'node_modules/fix-path/**/*', 'node_modules/lodash/**/*',
-          'node_modules/parse-columns/**/*', 'node_modules/dockerode/**/*'
-        ]
+        src: ['images/**/*', 'lib/**/*', 'main.js', 'package.json']
+      },
+      dependencies: {
+        cwd: '.',
+        dest: 'build/app/',
+        src: dep_files
       }
     },
 
