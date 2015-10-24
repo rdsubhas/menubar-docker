@@ -5,6 +5,7 @@ const ipc = require('ipc')
 const fixPath = require('fix-path')
 const Tray = require('tray')
 const Menu = require('./lib/menu')
+const Updater = require('./lib/updater')
 
 // report crashes to the Electron project
 require('crash-reporter').start()
@@ -24,4 +25,9 @@ app.on('ready', function () {
   ipc.on('app-quit', function () {
     app.quit()
   })
+
+  // Check for updates
+  if (process.env.NODE_ENV !== 'development') {
+    Updater.checkForUpdates()
+  }
 })
