@@ -27,7 +27,5 @@ app.on('ready', function () {
   })
 
   // Check for updates
-  if (process.env.NODE_ENV !== 'development') {
-    Updater.checkForUpdates()
-  }
+  Updater.start()
 })

@@ -35,11 +35,11 @@ module.exports = function (grunt) {
           icon: 'images/DockerMenu.icns',
           'app-bundle-id': 'dockermenu',
           'app-version': pkg.version,
-          asar: true,
+          asar: false,
           overwrite: true,
           out: 'build',
           platform: 'darwin',
-          version: '0.34.0',
+          version: '0.34.1',
           arch: 'x64'
         }
       }
