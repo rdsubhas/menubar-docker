@@ -1,6 +1,6 @@
 {
   "name": "docker-menu",
-  "version": "0.2.0",
+  "version": "0.2.99",
   "private": true,
   "main": "main.js",
   "engines": {
