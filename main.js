@@ -10,6 +10,12 @@ const Updater = require('./lib/updater')
 // report crashes to the Electron project
 require('crash-reporter').start()
 
+// Make single instance
+let shouldQuit = app.makeSingleInstance(function () { return true })
+if (shouldQuit) {
+  return app.quit()
+}
+
 app.on('ready', function () {
   // Fix $PATH
   fixPath()
