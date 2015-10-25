@@ -20,7 +20,7 @@
     "parse-columns": "^1.2.0"
   },
   "devDependencies": {
-    "electron-prebuilt": "^0.34.0",
+    "electron-prebuilt": "^0.34.1",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.6.0",
