@@ -1,7 +1,6 @@
 'use strict'
 
 const app = require('app')
-const ipc = require('ipc')
 const fixPath = require('fix-path')
 const Tray = require('tray')
 const Menu = require('./lib/menu')
@@ -26,11 +25,6 @@ app.on('ready', function () {
   let trayIcon = new Tray(app.getAppPath() + '/images/menuTemplate.png')
   trayIcon.setPressedImage(app.getAppPath() + '/images/menuPressed.png')
   Menu.watch(trayIcon)
-
-  // Quit app
-  ipc.on('app-quit', function () {
-    app.quit()
-  })
 
   // Check for updates
   Updater.start()
