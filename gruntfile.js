@@ -11,9 +11,11 @@ module.exports = function (grunt) {
   grunt.initConfig({
 
     clean: {
-      dist: ['build'],
-      options: {
-        force: true
+      dist: {
+        src: ['build/'],
+        options: {
+          force: true
+        }
       }
     },
 
