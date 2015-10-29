@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "bluebird": "^2.10.2",
-    "configstore": "^1.2.1",
     "fix-path": "^1.1.0",
     "dockerode": "^2.2.3",
     "lodash": "^3.10.0",
